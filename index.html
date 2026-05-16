@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prinsora Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(to bottom, #000000, #111111);
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border: 4px solid gold;
+      border-radius: 50%;
+      margin: 0 auto 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: gold;
+      font-size: 40px;
+      font-weight: bold;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 60px;
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .hero-text {
+      font-size: 20px;
+      color: #cccccc;
+      margin-bottom: 35px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: gold;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: #ffd700;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 2px solid gold;
+      color: gold;
+    }
+
+    .btn-outline:hover {
+      background: gold;
+      color: black;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      color: gold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #cccccc;
+      font-size: 18px;
+    }
+
+    .about-box {
+      margin-top: 50px;
+      background: #111111;
+      border: 1px solid #222;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .services {
+      background: #050505;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .service-card {
+      background: #111111;
+      border: 1px solid #222;
+      border-radius: 20px;
+      padding: 35px;
+      transition: 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: gold;
+    }
+
+    .service-card h3 {
+      color: gold;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .service-card p {
+      color: #cccccc;
+    }
+
+    .contact-box {
+      background: #111111;
+      border-radius: 20px;
+      padding: 50px;
+      margin-top: 50px;
+      border: 1px solid #222;
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin-bottom: 15px;
+      color: #cccccc;
+      font-size: 18px;
+    }
+
+    footer {
+      border-top: 1px solid #222;
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      background: black;
+    }
+
+    @media(max-width: 768px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+    }
+  </style></head><body>  <header>
+    <div class="hero-content">
+      <div class="logo">PG</div><h1>Prinsora Group</h1>
+
+  <p class="hero-text">
+    Building solutions across services, innovation, business support, and emerging opportunities with professionalism and excellence.
+  </p>
+
+  <div class="btn-group">
+    <a href="#contact" class="btn btn-primary">Contact Us</a>
+    <a href="#services" class="btn btn-outline">Our Services</a>
+  </div>
+</div>
+
+  </header>  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Us</h2><p class="section-text">
+    Prinsora Group is a growing business brand focused on delivering quality services and creating sustainable business opportunities through innovation, professionalism, and integrity.
+  </p>
+
+  <div class="about-box">
+    <h3 style="color: gold; margin-bottom: 15px;">Our Vision</h3>
+
+    <p style="color: #cccccc;">
+      To become a respected multi-service company recognized for operational excellence, innovation, and trusted customer relationships.
+    </p>
+  </div>
+</div>
+
+  </section>  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2><p class="section-text">
+    We are expanding across multiple service areas designed to meet modern business and customer needs.
+  </p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Business Support</h3>
+      <p>
+        Professional support solutions for businesses, startups, and organizations.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Operations & Logistics</h3>
+      <p>
+        Efficient operational coordination and structured service management.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Laundry & Lifestyle</h3>
+      <p>
+        Modern customer-focused laundry and convenience services.
+      </p>
+    </div>
+  </div>
+</div>
+
+  </section>  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Prinsora Group</h2><p class="section-text">
+    We are open to partnerships, collaborations, and business inquiries.
+  </p>
+
+  <div class="contact-box">
+    <p>Email: info@prinsoragroup.com</p>
+    <p>Lagos, Nigeria</p>
+
+    <a href="mailto:info@prinsoragroup.com" class="btn btn-primary">
+      Send Message
+    </a>
+  </div>
+</div>
+
+  </section>  <footer>
+    © 2026 Prinsora Group. All rights reserved.
+  </footer></body>
+</html>
