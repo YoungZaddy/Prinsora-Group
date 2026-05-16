@@ -556,15 +556,54 @@ Major Achievements
   <div class="contact-box">
     <h3 style="color:gold;margin-bottom:20px;">Get In Touch</h3>
     <p>Email: <a href="mailto:prinsoragroup@gmail.com">prinsoragroup@gmail.com</a></p>
-    <div class="address">
-  <h3>Our Address</h3>
-  <p>
-    12 Grace Pavilion St,<br>
-    Phase 2, Jikwoyi,<br>
-    FCT, Abuja,<br>
-    Nigeria
+    <body>
+
+  <!-- PASTE YOUR BUTTON CODE HERE -->
+  <button onclick="toggleAddress()" id="addressBtn">
+    Show Address
+  </button>
+
+  <p id="address" style="display:none; margin-top:10px;">
+    12 Grace Pavilion St, Phase 2, Jikwoyi, FCT, Abuja, Nigeria
   </p>
-</div>
+
+  <button onclick="togglePhone()" id="phoneBtn" style="margin-top:10px;">
+    Show Phone Number
+  </button>
+
+  <p id="phone" style="display:none; margin-top:10px;">
+    +2347036937363
+  </p>
+
+  <script>
+    function toggleAddress() {
+      const addr = document.getElementById("address");
+      const btn = document.getElementById("addressBtn");
+
+      if (addr.style.display === "none") {
+        addr.style.display = "block";
+        btn.textContent = "Hide Address";
+      } else {
+        addr.style.display = "none";
+        btn.textContent = "Show Address";
+      }
+    }
+
+    function togglePhone() {
+      const phone = document.getElementById("phone");
+      const btn = document.getElementById("phoneBtn");
+
+      if (phone.style.display === "none") {
+        phone.style.display = "block";
+        btn.textContent = "Hide Phone Number";
+      } else {
+        phone.style.display = "none";
+        btn.textContent = "Show Phone Number";
+      }
+    }
+  </script>
+
+</body>v>
     <a href="mailto:prinsoragroup@gmail.com" class="btn btn-primary">
       Send Message
     </a>
