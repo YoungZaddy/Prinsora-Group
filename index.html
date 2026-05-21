@@ -1,3 +1,814 @@
+
+
+
+See what the site is showing
+
+file_00000000211c71f4b0ed926aba69a493
+See how it is displaying
+
+Here is the updated HTML in text form with the logo fixes, larger responsive logo display, sticky navigation, and cleaner structure integrated:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prinsora Group</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+color:white;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.navbar{
+position:sticky;
+top:0;
+background:#0a0a0a;
+padding:20px;
+border-bottom:1px solid #222;
+z-index:1000;
+}
+
+.nav-links{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+color:gold;
+text-decoration:none;
+font-weight:500;
+}
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(to bottom,#000,#111);
+}
+
+.hero-content{
+max-width:1000px;
+}
+
+/* Updated logo section */
+
+.logo{
+width:100%;
+max-width:1000px;
+margin:0 auto 40px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:visible;
+border:none;
+}
+
+.logo img{
+width:100%;
+height:auto;
+object-fit:contain;
+}
+
+h1{
+font-size:60px;
+color:gold;
+margin-bottom:20px;
+}
+
+.hero-text{
+font-size:20px;
+color:#cccccc;
+margin-bottom:35px;
+}
+
+.btn-group{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.btn-primary{
+background:gold;
+color:black;
+}
+
+.btn-outline{
+border:2px solid gold;
+color:gold;
+}
+
+.btn-outline:hover{
+background:gold;
+color:black;
+}
+
+section{
+padding:100px 20px;
+}
+
+.section-title{
+font-size:42px;
+color:gold;
+text-align:center;
+margin-bottom:20px;
+}
+
+.section-text{
+max-width:800px;
+margin:auto;
+text-align:center;
+color:#ccc;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.service-card{
+background:#111;
+padding:35px;
+border-radius:20px;
+border:1px solid #222;
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+border-color:gold;
+}
+
+.service-card h3{
+color:gold;
+margin-bottom:15px;
+}
+
+.contact-box{
+background:#111;
+padding:50px;
+border-radius:20px;
+text-align:center;
+margin-top:40px;
+border:1px solid #222;
+}
+
+footer{
+border-top:1px solid #222;
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+.hero-text{
+font-size:17px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Choose Us</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<header>
+
+<div class="hero-content">
+
+<div class="logo">
+
+<img src="logo.png" alt="Prinsora Group Logo">
+
+</div>
+
+<h1>Prinsora Group</h1>
+
+<p class="hero-text">
+
+Premium integrated services company delivering professional operational support solutions across facility management, cleaning services, fabric care, workforce support and property maintenance.
+
+</p>
+
+<div class="btn-group">
+
+<a href="#contact" class="btn btn-primary">
+Contact Us
+</a>
+
+<a href="#services" class="btn btn-outline">
+Our Services
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Us
+</h2>
+
+<p class="section-text">
+
+Prinsora Group provides structured operational support solutions using trained personnel, quality assurance systems and professional service delivery frameworks.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose Us
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Professionalism</h3>
+<p>Reliable services delivered with structured systems and high standards.</p>
+</div>
+
+<div class="service-card">
+<h3>Innovation</h3>
+<p>Continuous improvement and modern solutions for clients.</p>
+</div>
+
+<div class="service-card">
+<h3>Customer Satisfaction</h3>
+<p>Building trusted relationships and long-term value.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Service Divisions
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Prinsora Facilities</h3>
+<p>Integrated facility management and operational support.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Cleaning</h3>
+<p>Environmental hygiene and sanitation services.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Fabric Care</h3>
+<p>Premium garment and textile management solutions.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Contact Prinsora Group
+</h2>
+
+<div class="contact-box">
+
+<p>Email: info@prinsoragroup.com</p>
+
+<p>Lagos, Nigeria</p>
+
+<a href="mailto:info@prinsoragroup.com" class="btn btn-primary">
+Send Message
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Prinsora Group. All rights reserved.
+
+</footer>
+
+</body>
+</html>
+Keep this line matching your actual uploaded file name:
+
+<img src="logo.png" alt="Prinsora Group Logo">
+If your logo file is named differently, replace logo.png with the exact name.
+
+
+How about adding a button that reads: Meet the Executive Chairman/Group Managing Director with my picture and qualifications on display
+
+That can work well for a corporate site. Rather than placing all the details directly on the homepage, I would make it a button that scrolls to a dedicated executive profile section. It keeps the page cleaner and more professional.
+
+Add this button beside your existing buttons:
+
+<a href="#executive" class="btn btn-outline">
+Meet the Executive Chairman / Group Managing Director
+</a>
+Then add this new section below your "About Us" section:
+
+<section id="executive" style="background:#080808;">
+
+<div class="container">
+
+<h2 class="section-title">
+Executive Chairman / Group Managing Director
+</h2>
+
+<div class="contact-box">
+
+<div style="margin-bottom:30px;">
+
+<img src="chairman.jpg"
+alt="Executive Chairman"
+style="
+width:250px;
+max-width:100%;
+border-radius:20px;
+border:2px solid gold;
+">
+
+</div>
+
+<h3 style="color:gold;margin-bottom:15px;">
+Smart Oboson
+</h3>
+
+<p style="color:#ccc;margin-bottom:20px;">
+Executive Chairman / Group Managing Director
+</p>
+
+<h3 style="color:gold;margin-bottom:10px;">
+Qualifications
+</h3>
+
+<p style="color:#ccc;">
+• Bachelor of Science (B.Sc.) — [Your Degree]<br>
+• Professional Certifications — [Insert Certifications]<br>
+• Leadership / Management Training — [Insert Training]<br>
+• Industry Experience — [Insert Experience]
+</p>
+
+<h3 style="color:gold;margin-top:30px;margin-bottom:10px;">
+Profile
+</h3>
+
+<p style="color:#ccc;">
+Smart Oboson leads Prinsora Group with a vision focused on operational excellence, innovation, customer satisfaction, and sustainable business growth across multiple service sectors.
+</p>
+
+</div>
+
+</div>
+
+</section>
+Replace:
+
+chairman.jpg
+with the exact filename of your uploaded picture.
+
+Replace the qualification placeholders:
+
+[Your Degree]
+[Insert Certifications]
+[Insert Training]
+[Insert Experience]
+with your actual details.
+
+One design suggestion: if you're positioning yourself as the face of the company, use a professional headshot (clear background, formal attire). That section often becomes one of the most viewed parts of a corporate website.
+
+
+How do I add those buttons
+
+Find this section in your current HTML:
+
+<div class="btn-group">
+
+<a href="#contact" class="btn btn-primary">
+Contact Us
+</a>
+
+<a href="#services" class="btn btn-outline">
+Our Services
+</a>
+
+</div>
+Add the new button directly underneath the Our Services button so it becomes:
+
+<div class="btn-group">
+
+<a href="#contact" class="btn btn-primary">
+Contact Us
+</a>
+
+<a href="#services" class="btn btn-outline">
+Our Services
+</a>
+
+<a href="#executive" class="btn btn-outline">
+Meet the Executive Chairman / Group Managing Director
+</a>
+
+</div>
+That only creates the button itself.
+
+Then create the section the button should open by finding the end of your About Us section and paste this immediately after it:
+
+<section id="executive">
+
+<div class="container">
+
+<h2 class="section-title">
+Executive Chairman / Group Managing Director
+</h2>
+
+<div class="contact-box">
+
+<img src="chairman.jpg"
+alt="Executive Chairman"
+style="width:250px;border-radius:20px;margin-bottom:25px;">
+
+<h3 style="color:gold;">
+Smart Oboson
+</h3>
+
+<p style="color:#ccc;">
+Executive Chairman / Group Managing Director
+</p>
+
+<p style="color:#ccc;margin-top:20px;">
+Insert qualifications and profile details here.
+</p>
+
+</div>
+
+</div>
+
+</section>
+Then:
+
+Replace chairman.jpg with the exact name of your uploaded photo.
+
+Replace Insert qualifications and profile details here with your qualifications.
+
+After saving and refreshing:
+
+Clicking Meet the Executive Chairman / Group Managing Director will automatically scroll to your profile section.
+
+
+please confirm all needed corrections or adjustment in the above pasted html and effect accordingly
+
+I reviewed the HTML you pasted together with the additions we discussed. There are a few corrections I would make before merging everything. Some earlier suggestions introduced inconsistencies (for example shrinking your services section and using too many inline styles). Since you asked to apply corrections, below is the consolidated version of what should change.
+
+Main adjustments made:
+
+Keep your original full service content instead of reducing it to only three cards.
+
+Replace the old PG placeholder with the actual logo image.
+
+Remove the circular logo border and clipping permanently.
+
+Add the Executive Chairman / Group Managing Director button correctly.
+
+Add a proper executive profile section.
+
+Avoid excessive inline styles.
+
+Keep responsive behavior for phones.
+
+Keep the sticky navigation.
+
+Add a spacing adjustment under the enlarged logo.
+
+Replace these sections in your existing HTML.
+
+Replace your old logo block inside <header>:
+
+<div class="logo">
+   <img src="logo.png" alt="Prinsora Group Logo">
+</div>
+(Replace logo.png with your exact uploaded file name if different.)
+
+Replace the entire .logo CSS section with this:
+
+.logo{
+    width:100%;
+    max-width:1000px;
+    margin:0 auto 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:visible;
+}
+
+.logo img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+Replace your button group with this:
+
+<div class="btn-group">
+
+<a href="#contact" class="btn btn-primary">
+Contact Us
+</a>
+
+<a href="#services" class="btn btn-outline">
+Our Services
+</a>
+
+<a href="#executive" class="btn btn-outline">
+Meet the Executive Chairman / Group Managing Director
+</a>
+
+</div>
+Add this section immediately after your About section:
+
+<section id="executive" style="background:#080808;">
+
+<div class="container">
+
+<h2 class="section-title">
+Executive Chairman / Group Managing Director
+</h2>
+
+<div class="contact-box">
+
+<img src="chairman.jpg"
+alt="Executive Chairman"
+class="executive-image">
+
+<h3 style="color:gold;margin-top:25px;">
+Smart Oboson
+</h3>
+
+<p style="color:#ccc;margin-bottom:25px;">
+Executive Chairman / Group Managing Director
+</p>
+
+<h3 style="color:gold;">
+Qualifications
+</h3>
+
+<p style="color:#ccc;">
+
+• Bachelor of Science (B.Sc.) — [Insert Degree]<br>
+• Professional Certifications — [Insert Certification]<br>
+• Leadership Training — [Insert Training]<br>
+• Industry Experience — [Insert Experience]
+
+</p>
+
+<h3 style="color:gold;margin-top:30px;">
+Profile
+</h3>
+
+<p style="color:#ccc;">
+
+Smart Oboson provides strategic leadership for Prinsora Group with emphasis on operational excellence, structured growth, innovation and customer-centered service delivery.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+Add this CSS under your existing styles:
+
+.executive-image{
+width:250px;
+max-width:100%;
+border-radius:20px;
+border:2px solid gold;
+}
+Then replace:
+
+chairman.jpg
+with the exact filename of your uploaded picture.
+
+Also replace:
+
+[Insert Degree]
+[Insert Certification]
+[Insert Training]
+[Insert Experience]
+with your real details.
+
+These corrections preserve the original structure you built while integrating the executive profile feature cleanly.
+
+
+lets have it
+
+I've captured the updated contact information:
+
+<p>Phone: +234 7036 9373 63</p>
+
+<p>Email: prinsoragroup@gmail.com</p>
+
+<p>Address: 12 Grace Pavilion Street, Phase 2, Jikwoyi, Abuja</p>
+The only remaining item is the Facebook page/link. Once you provide it, I’ll place everything into the contact section exactly as part of the complete site information.
+
+For now, replace your current contact box section with this:
+
+<div class="contact-box">
+
+<h3 style="color:gold;margin-bottom:20px;">
+Get In Touch
+</h3>
+
+<p>
+Phone: +234 7036 9373 63
+</p>
+
+<p>
+Email: prinsoragroup@gmail.com
+</p>
+
+<p>
+Address: 12 Grace Pavilion Street, Phase 2, Jikwoyi, Abuja
+</p>
+
+<a href="mailto:prinsoragroup@gmail.com"
+class="btn btn-primary">
+
+Send Message
+
+</a>
+
+</div>
+Once you send the Facebook link, I’ll add it in the same format.
+
+
+https://www.facebook.com/profile.php?id=61589783856213
+
+I've added the Facebook information and consolidated the contact block. Replace your current contact section content with this:
+
+<div class="contact-box">
+
+<h3 style="color:gold;margin-bottom:20px;">
+Get In Touch
+</h3>
+
+<p>
+Phone: +234 7036 9373 63
+</p>
+
+<p>
+Email: prinsoragroup@gmail.com
+</p>
+
+<p>
+Address: 12 Grace Pavilion Street, Phase 2, Jikwoyi, Abuja
+</p>
+
+<p>
+Facebook: Prinsora Group
+</p>
+
+<a href="mailto:prinsoragroup@gmail.com"
+class="btn btn-primary">
+
+Send Message
+
+</a>
+
+</div>
+For the Facebook link itself, use:
+
+Prinsora Group Facebook Page
+
+You can also turn the Facebook text into a clickable HTML button inside your page:
+
+<a href="https://www.facebook.com/profile.php?id=61589783856213"
+target="_blank"
+class="btn btn-outline">
+
+Visit Our Facebook Page
+
+</a>
+This will add a visible Facebook button beside your existing site actions.
+
+
+i need it inserted comprehensively so i can just copy and paste in one sheet
+
+Below is a single consolidated version you can copy and paste directly. I’ve integrated:
+
+Larger responsive logo
+
+Sticky navigation
+
+Executive Chairman / Group Managing Director button
+
+Executive profile section
+
+Updated email
+
+Updated phone number
+
+Updated physical address
+
+Facebook button
+
+Contact section improvements
+
+Original service structure preserved
+
+Replace logo.png with your actual logo filename and chairman.jpg with your photo filename.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +842,6 @@ max-width:1200px;
 margin:auto;
 }
 
-/* Navigation */
-
 .navbar{
 position:sticky;
 top:0;
@@ -60,8 +869,6 @@ transition:.3s;
 color:white;
 }
 
-/* Hero */
-
 header{
 min-height:100vh;
 display:flex;
@@ -76,8 +883,6 @@ background:linear-gradient(to bottom,#000,#111);
 max-width:1000px;
 }
 
-/* Logo */
-
 .logo{
 width:100%;
 max-width:1000px;
@@ -85,7 +890,6 @@ margin:0 auto 50px;
 display:flex;
 justify-content:center;
 align-items:center;
-overflow:visible;
 }
 
 .logo img{
@@ -93,8 +897,6 @@ width:100%;
 height:auto;
 object-fit:contain;
 }
-
-/* Headings */
 
 h1{
 font-size:60px;
@@ -107,23 +909,6 @@ font-size:20px;
 color:#ccc;
 margin-bottom:35px;
 }
-
-.section-title{
-font-size:42px;
-color:gold;
-text-align:center;
-margin-bottom:20px;
-}
-
-.section-text{
-max-width:800px;
-margin:auto;
-text-align:center;
-font-size:18px;
-color:#ccc;
-}
-
-/* Buttons */
 
 .btn-group{
 display:flex;
@@ -160,13 +945,32 @@ background:gold;
 color:black;
 }
 
-/* Sections */
-
 section{
 padding:100px 20px;
 }
 
-/* Cards */
+.section-title{
+font-size:42px;
+color:gold;
+text-align:center;
+margin-bottom:20px;
+}
+
+.section-text{
+max-width:800px;
+margin:auto;
+text-align:center;
+font-size:18px;
+color:#ccc;
+}
+
+.about-box{
+background:#111;
+padding:40px;
+margin-top:40px;
+border-radius:20px;
+border:1px solid #222;
+}
 
 .service-grid{
 display:grid;
@@ -193,29 +997,13 @@ color:gold;
 margin-bottom:15px;
 }
 
-.service-card p{
-color:#ccc;
-}
-
-/* About */
-
-.about-box{
-margin-top:40px;
-background:#111;
-padding:40px;
-border-radius:20px;
-border:1px solid #222;
-}
-
-/* Contact */
-
 .contact-box{
 background:#111;
 padding:50px;
 border-radius:20px;
-margin-top:40px;
 border:1px solid #222;
 text-align:center;
+margin-top:40px;
 }
 
 .executive-image{
@@ -227,13 +1015,11 @@ margin-bottom:25px;
 }
 
 footer{
-text-align:center;
-padding:30px;
 border-top:1px solid #222;
+padding:30px;
+text-align:center;
 color:#777;
 }
-
-/* Mobile */
 
 @media(max-width:768px){
 
@@ -285,7 +1071,7 @@ font-size:32px;
 
 <p class="hero-text">
 
-Premium integrated services company delivering professional operational support solutions across facility management, cleaning services, fabric care, workforce support, and property maintenance.
+Premium integrated services company delivering professional operational support solutions across facility management, cleaning services, fabric care, workforce support and property maintenance.
 
 </p>
 
@@ -300,7 +1086,7 @@ Our Services
 </a>
 
 <a href="#executive" class="btn btn-outline">
-Meet the Executive Chairman / Group Managing Director
+Meet Executive Chairman / Group Managing Director
 </a>
 
 </div>
@@ -313,13 +1099,11 @@ Meet the Executive Chairman / Group Managing Director
 
 <div class="container">
 
-<h2 class="section-title">
-About Us
-</h2>
+<h2 class="section-title">About Us</h2>
 
 <p class="section-text">
 
-Prinsora Group is a premium integrated services company established to provide structured operational support solutions using professional systems, trained personnel, quality assurance frameworks, and sustainable service models.
+Prinsora Group is a premium integrated services company established to provide structured operational support solutions using professional systems, trained personnel, supervision frameworks and quality assurance systems.
 
 </p>
 
@@ -329,9 +1113,9 @@ Prinsora Group is a premium integrated services company established to provide s
 Our Vision
 </h3>
 
-<p style="color:#ccc;margin-top:15px;">
+<p style="margin-top:15px;color:#ccc;">
 
-To become a respected multi-service company recognized for operational excellence, innovation, and trusted customer relationships.
+To become a respected multi-service company recognized for operational excellence, innovation and trusted customer relationships.
 
 </p>
 
@@ -341,7 +1125,7 @@ To become a respected multi-service company recognized for operational excellenc
 
 </section>
 
-<section id="executive" style="background:#080808;">
+<section id="executive">
 
 <div class="container">
 
@@ -354,39 +1138,19 @@ Executive Chairman / Group Managing Director
 <div class="contact-box">
 
 <img src="chairman.jpg"
-alt="Executive Chairman"
 class="executive-image">
 
 <h3 style="color:gold;">
 Smart Oboson
 </h3>
 
-<p style="color:#ccc;margin-bottom:25px;">
-
-Executive Chairman / Group Managing Director
-
-</p>
-
-<h3 style="color:gold;">
-Qualifications
-</h3>
-
 <p style="color:#ccc;">
-
-• Bachelor of Science (B.Sc.) — Insert Degree<br>
-• Professional Certifications — Insert Certifications<br>
-• Leadership Training — Insert Training<br>
-• Industry Experience — Insert Experience
-
+Executive Chairman / Group Managing Director
 </p>
 
-<h3 style="color:gold;margin-top:25px;">
-Profile
-</h3>
+<p style="margin-top:20px;color:#ccc;">
 
-<p style="color:#ccc;margin-top:15px;">
-
-Smart Oboson leads Prinsora Group with a vision centered on operational excellence, innovation, sustainable growth, and customer-centered service delivery.
+Insert qualifications and profile details here
 
 </p>
 
@@ -401,26 +1165,24 @@ Smart Oboson leads Prinsora Group with a vision centered on operational excellen
 <div class="container">
 
 <h2 class="section-title">
-
 Why Choose Prinsora Group
-
 </h2>
 
 <div class="service-grid">
 
 <div class="service-card">
 <h3>Professionalism</h3>
-<p>Reliable and structured service delivery.</p>
+<p>Reliable and structured services.</p>
 </div>
 
 <div class="service-card">
 <h3>Innovation</h3>
-<p>Continuous improvement and modern solutions.</p>
+<p>Modern solutions and continuous improvement.</p>
 </div>
 
 <div class="service-card">
 <h3>Customer Satisfaction</h3>
-<p>Building trusted relationships and long-term value.</p>
+<p>Long-term value and trusted relationships.</p>
 </div>
 
 </div>
@@ -443,17 +1205,574 @@ Our Service Divisions
 
 <div class="service-card">
 <h3>Prinsora Facilities</h3>
-<p>Integrated facility management services.</p>
+<p>Integrated facility management support.</p>
 </div>
 
 <div class="service-card">
 <h3>Prinsora Cleaning</h3>
-<p>Professional sanitation and environmental services.</p>
+<p>Environmental hygiene and sanitation services.</p>
 </div>
 
 <div class="service-card">
 <h3>Prinsora Fabric Care</h3>
-<p>Premium garment and textile care solutions.</p>
+<p>Premium garment and textile care services.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Support Services</h3>
+<p>Workforce outsourcing and staffing support.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Property Care</h3>
+<p>Property maintenance and environmental services.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Contact Prinsora Group
+</h2>
+
+<div class="contact-box">
+
+<p>Phone: +234 7036 9373 63</p>
+
+<p>Email: prinsoragroup@gmail.com</p>
+
+<p>Address: 12 Grace Pavilion Street, Phase 2, Jikwoyi, Abuja</p>
+
+<div class="btn-group" style="margin-top:30px;">
+
+<a href="mailto:prinsoragroup@gmail.com"
+class="btn btn-primary">
+Send Message
+</a>
+
+<a href="https://www.facebook.com/profile.php?id=61589783856213"
+target="_blank"
+class="btn btn-outline">
+Visit Facebook Page
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Prinsora Group. All rights reserved.
+
+</footer>
+
+</body>
+</html>
+
+Only edit these two lines after pasting:
+
+<img src="logo.png" alt="Prinsora Group Logo">
+<img src="chairman.jpg" class="executive-image">
+Replace them with your actual file names.
+
+
+i need everything comprehensively in one sheet from a-z
+
+Below is a complete single-sheet HTML document from top to bottom, consolidated into one version with all the updates discussed:
+
+Responsive enlarged logo (without clipping)
+
+Sticky navigation bar
+
+Hero section
+
+Executive Chairman / Group Managing Director button
+
+Executive profile section with image
+
+About section
+
+Why Choose Us section
+
+Service divisions
+
+Updated contact details:
+
+Email: prinsoragroup@gmail.com
+
+Phone: +234 7036 9373 63
+
+Address: 12 Grace Pavilion Street, Phase 2, Jikwoyi, Abuja
+
+Facebook button integrated
+
+Mobile responsiveness
+
+Cleaned styling
+
+Replace only:
+
+logo.png → with your exact logo filename
+
+chairman.jpg → with your exact picture filename
+
+Qualification placeholders with your real qualifications
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prinsora Group</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+color:white;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* NAVIGATION */
+
+.navbar{
+position:sticky;
+top:0;
+background:#0a0a0a;
+padding:20px;
+border-bottom:1px solid #222;
+z-index:1000;
+}
+
+.nav-links{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+color:gold;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:white;
+}
+
+/* HERO SECTION */
+
+header{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(to bottom,#000,#111);
+}
+
+.hero-content{
+max-width:1000px;
+}
+
+/* LOGO */
+
+.logo{
+width:100%;
+max-width:1000px;
+display:flex;
+justify-content:center;
+margin:0 auto 50px;
+}
+
+.logo img{
+width:100%;
+height:auto;
+object-fit:contain;
+}
+
+/* HEADINGS */
+
+h1{
+font-size:60px;
+color:gold;
+margin-bottom:20px;
+}
+
+.hero-text{
+font-size:20px;
+color:#cccccc;
+margin-bottom:35px;
+}
+
+.section-title{
+font-size:42px;
+color:gold;
+text-align:center;
+margin-bottom:20px;
+}
+
+.section-text{
+max-width:800px;
+margin:auto;
+text-align:center;
+font-size:18px;
+color:#cccccc;
+}
+
+/* BUTTONS */
+
+.btn-group{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.btn-primary{
+background:gold;
+color:black;
+}
+
+.btn-outline{
+border:2px solid gold;
+color:gold;
+}
+
+.btn-outline:hover{
+background:gold;
+color:black;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 20px;
+}
+
+/* BOXES */
+
+.about-box,
+.contact-box,
+.service-card{
+background:#111;
+border:1px solid #222;
+border-radius:20px;
+}
+
+.about-box{
+padding:40px;
+margin-top:40px;
+}
+
+.contact-box{
+padding:50px;
+margin-top:40px;
+text-align:center;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.service-card{
+padding:35px;
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+border-color:gold;
+}
+
+.service-card h3{
+color:gold;
+margin-bottom:15px;
+}
+
+.service-card p{
+color:#cccccc;
+}
+
+/* EXECUTIVE */
+
+.executive-image{
+width:250px;
+max-width:100%;
+border-radius:20px;
+border:2px solid gold;
+margin-bottom:25px;
+}
+
+footer{
+border-top:1px solid #222;
+padding:30px;
+text-align:center;
+color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+.hero-text{
+font-size:17px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Choose Us</a>
+<a href="#executive">Leadership</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<header>
+
+<div class="hero-content">
+
+<div class="logo">
+<img src="logo.png" alt="Prinsora Group Logo">
+</div>
+
+<h1>Prinsora Group</h1>
+
+<p class="hero-text">
+
+Premium integrated services company delivering professional operational support solutions across facility management, cleaning services, fabric care, workforce support and property maintenance.
+
+</p>
+
+<div class="btn-group">
+
+<a href="#contact" class="btn btn-primary">
+Contact Us
+</a>
+
+<a href="#services" class="btn btn-outline">
+Our Services
+</a>
+
+<a href="#executive" class="btn btn-outline">
+Meet Executive Chairman / Group Managing Director
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Us
+</h2>
+
+<p class="section-text">
+
+Prinsora Group is a premium integrated services company established to provide structured operational support solutions using professional systems, trained personnel, supervision frameworks and quality assurance systems.
+
+</p>
+
+<div class="about-box">
+
+<h3 style="color:gold;">
+Our Vision
+</h3>
+
+<p style="margin-top:15px;color:#cccccc;">
+
+To become a respected multi-service company recognized for operational excellence, innovation and trusted customer relationships.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="executive" style="background:#080808;">
+
+<div class="container">
+
+<h2 class="section-title">
+Executive Chairman / Group Managing Director
+</h2>
+
+<div class="contact-box">
+
+<img src="chairman.jpg"
+class="executive-image"
+alt="Executive Chairman">
+
+<h3 style="color:gold;">
+Smart Oboson
+</h3>
+
+<p style="margin-bottom:25px;color:#cccccc;">
+Executive Chairman / Group Managing Director
+</p>
+
+<h3 style="color:gold;">
+Qualifications
+</h3>
+
+<p style="color:#cccccc;">
+
+• Insert Degree<br>
+• Insert Certifications<br>
+• Insert Leadership Training<br>
+• Insert Experience
+
+</p>
+
+<h3 style="margin-top:25px;color:gold;">
+Profile
+</h3>
+
+<p style="margin-top:15px;color:#cccccc;">
+
+Smart Oboson leads Prinsora Group with emphasis on operational excellence, innovation, structured growth and customer-centered service delivery.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose Prinsora Group
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Professionalism</h3>
+<p>Reliable and structured service delivery.</p>
+</div>
+
+<div class="service-card">
+<h3>Innovation</h3>
+<p>Modern solutions and continuous improvement.</p>
+</div>
+
+<div class="service-card">
+<h3>Customer Satisfaction</h3>
+<p>Trusted relationships and long-term value.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Service Divisions
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Prinsora Facilities</h3>
+<p>Integrated facility management support.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Cleaning</h3>
+<p>Environmental hygiene and sanitation services.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Fabric Care</h3>
+<p>Premium garment and textile care services.</p>
 </div>
 
 <div class="service-card">
@@ -477,22 +1796,30 @@ Our Service Divisions
 <div class="container">
 
 <h2 class="section-title">
-
 Contact Prinsora Group
-
 </h2>
 
 <div class="contact-box">
 
-<p>Email: info@prinsoragroup.com</p>
+<p>Phone: +234 7036 9373 63</p>
 
-<p>Lagos, Nigeria</p>
+<p>Email: prinsoragroup@gmail.com</p>
 
-<a href="mailto:info@prinsoragroup.com" class="btn btn-primary">
+<p>Address: 12 Grace Pavilion Street, Phase 2, Jikwoyi, Abuja</p>
 
+<div class="btn-group" style="margin-top:30px;">
+
+<a href="mailto:prinsoragroup@gmail.com" class="btn btn-primary">
 Send Message
-
 </a>
+
+<a href="https://www.facebook.com/profile.php?id=61589783856213"
+target="_blank"
+class="btn btn-outline">
+Visit Facebook Page
+</a>
+
+</div>
 
 </div>
 
@@ -508,3 +1835,5 @@ Send Message
 
 </body>
 </html>
+
+
