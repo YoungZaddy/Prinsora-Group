@@ -1,227 +1,295 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYCTN8RHVF"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prinsora Group</title>
 
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-gtag('config', 'G-JYCTN8RHVF');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prinsora Group</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #000;
-      color: white;
-      line-height: 1.6;
-    }
+<style>
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: linear-gradient(to bottom, #000000, #111111);
-      padding: 40px 20px;
-    }
-
-    .hero-content {
-      max-width: 800px;
-    }
-
- .logo {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    margin: 0 auto 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-    border: none;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-    .logo img{
-    width:100%;
-    height:auto;
-    object-fit:contain;
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+color:white;
+line-height:1.6;
 }
-    h1 {
-      font-size: 60px;
-      color: gold;
-      margin-bottom: 20px;
-    }
 
-    .hero-text {
-      font-size: 20px;
-      color: #cccccc;
-      margin-bottom: 35px;
-    }
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
 
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+/* Navigation */
 
-    .btn {
-      padding: 15px 30px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s ease;
-      display: inline-block;
-    }
+.navbar{
+position:sticky;
+top:0;
+background:#0a0a0a;
+padding:20px;
+border-bottom:1px solid #222;
+z-index:1000;
+}
 
-    .btn-primary {
-      background: gold;
-      color: black;
-    }
+.nav-links{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
 
-    .btn-primary:hover {
-      background: #ffd700;
-      transform: translateY(-3px);
-    }
+.nav-links a{
+color:gold;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
 
-    .btn-outline {
-      border: 2px solid gold;
-      color: gold;
-    }
+.nav-links a:hover{
+color:white;
+}
 
-    .btn-outline:hover {
-      background: gold;
-      color: black;
-    }
+/* Hero */
 
-    section {
-      padding: 100px 20px;
-    }
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(to bottom,#000,#111);
+}
 
-    .section-title {
-      font-size: 42px;
-      color: gold;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+.hero-content{
+max-width:1000px;
+}
 
-    .section-text {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      color: #cccccc;
-      font-size: 18px;
-    }
+/* Logo */
 
-    .about-box {
-      margin-top: 50px;
-      background: #111111;
-      border: 1px solid #222;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
+.logo{
+width:100%;
+max-width:1000px;
+margin:0 auto 50px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:visible;
+}
 
-    .services {
-      background: #050505;
-    }
+.logo img{
+width:100%;
+height:auto;
+object-fit:contain;
+}
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 60px;
-    }
+/* Headings */
 
-    .service-card {
-      background: #111111;
-      border: 1px solid #222;
-      border-radius: 20px;
-      padding: 35px;
-      transition: 0.3s ease;
-    }
+h1{
+font-size:60px;
+color:gold;
+margin-bottom:20px;
+}
 
-    .service-card:hover {
-      transform: translateY(-5px);
-      border-color: gold;
-    }
+.hero-text{
+font-size:20px;
+color:#ccc;
+margin-bottom:35px;
+}
 
-    .service-card h3 {
-      color: gold;
-      margin-bottom: 15px;
-      font-size: 24px;
-    }
+.section-title{
+font-size:42px;
+color:gold;
+text-align:center;
+margin-bottom:20px;
+}
 
-    .service-card p {
-      color: #cccccc;
-    }
+.section-text{
+max-width:800px;
+margin:auto;
+text-align:center;
+font-size:18px;
+color:#ccc;
+}
 
-    .contact-box {
-      background: #111111;
-      border-radius: 20px;
-      padding: 50px;
-      margin-top: 50px;
-      border: 1px solid #222;
-      text-align: center;
-    }
+/* Buttons */
 
-    .contact-box p {
-      margin-bottom: 15px;
-      color: #cccccc;
-      font-size: 18px;
-    }
+.btn-group{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
 
-    footer {
-      border-top: 1px solid #222;
-      text-align: center;
-      padding: 30px 20px;
-      color: #777;
-      background: black;
-    }
+.btn{
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+transition:.3s;
+}
 
-    @media(max-width: 768px) {
-      h1 {
-        font-size: 42px;
-      }
+.btn:hover{
+transform:translateY(-4px);
+}
 
-      .hero-text {
-        font-size: 17px;
-      }
+.btn-primary{
+background:gold;
+color:black;
+}
 
-      .section-title {
-        font-size: 32px;
-      }
-    }
-  </style></head><body>  <header>
-    <div class="hero-content">
-      <div class="logo">
-  <img src="logo.png" alt="Prinsora Group Logo">
-</div><h1>Prinsora Group</h1>
+.btn-outline{
+border:2px solid gold;
+color:gold;
+}
 
-  <p class="hero-text">
-    Premium integrated services company delivering professional operational support solutions across facility management, cleaning services, fabric care, workforce support, and property maintenance.
-  </p>
+.btn-outline:hover{
+background:gold;
+color:black;
+}
 
-  <div class="btn-group">
+/* Sections */
+
+section{
+padding:100px 20px;
+}
+
+/* Cards */
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.service-card{
+background:#111;
+padding:35px;
+border-radius:20px;
+border:1px solid #222;
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+border-color:gold;
+}
+
+.service-card h3{
+color:gold;
+margin-bottom:15px;
+}
+
+.service-card p{
+color:#ccc;
+}
+
+/* About */
+
+.about-box{
+margin-top:40px;
+background:#111;
+padding:40px;
+border-radius:20px;
+border:1px solid #222;
+}
+
+/* Contact */
+
+.contact-box{
+background:#111;
+padding:50px;
+border-radius:20px;
+margin-top:40px;
+border:1px solid #222;
+text-align:center;
+}
+
+.executive-image{
+width:250px;
+max-width:100%;
+border-radius:20px;
+border:2px solid gold;
+margin-bottom:25px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#777;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+.hero-text{
+font-size:17px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Choose Us</a>
+<a href="#executive">Leadership</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<header>
+
+<div class="hero-content">
+
+<div class="logo">
+
+<img src="logo.png" alt="Prinsora Group Logo">
+
+</div>
+
+<h1>Prinsora Group</h1>
+
+<p class="hero-text">
+
+Premium integrated services company delivering professional operational support solutions across facility management, cleaning services, fabric care, workforce support, and property maintenance.
+
+</p>
+
+<div class="btn-group">
 
 <a href="#contact" class="btn btn-primary">
 Contact Us
@@ -236,380 +304,207 @@ Meet the Executive Chairman / Group Managing Director
 </a>
 
 </div>
+
 </div>
 
-  </header>  <section style="background:#0a0a0a;padding:20px 0;border-bottom:1px solid #222;">
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
-      <div style="color:#ccc;">Welcome to Prinsora Group Official Website</div>
-      <div style="display:flex;gap:15px;flex-wrap:wrap;">
-        <a href="#about" style="color:gold;text-decoration:none;">About</a>
-        <a href="#services" style="color:gold;text-decoration:none;">Services</a>
-        <a href="#why" style="color:gold;text-decoration:none;">Why Choose Us</a>
-        <a href="#contact" style="color:gold;text-decoration:none;">Contact</a>
-      </div>
-    </div>
-  </section>  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About Us</h2><p class="section-text">
-    Prinsora Group is a premium integrated services company established to provide structured operational support solutions using professional systems, trained personnel, supervision frameworks, standard operating procedures, and quality assurance models.
-  </p>
-<section id="executive">
+</header>
+
+<section id="about">
 
 <div class="container">
 
 <h2 class="section-title">
-Executive Chairman / Group Managing Director
+About Us
 </h2>
 
-<div class="contact-box">
+<p class="section-text">
 
-<img src="chairman.png"
-     alt="Mr. Smart Oboson"
-     style="
-     width:280px;
-     height:320px;
-     object-fit:cover;
-     border-radius:20px;
-     border:3px solid gold;
-     box-shadow:0 10px 30px rgba(0,0,0,0.4);
-     margin-bottom:25px;">
+Prinsora Group is a premium integrated services company established to provide structured operational support solutions using professional systems, trained personnel, quality assurance frameworks, and sustainable service models.
+
+</p>
+
+<div class="about-box">
 
 <h3 style="color:gold;">
-Smart Oboson
+Our Vision
 </h3>
 
-<p style="color:#ccc;">
-Executive Chairman / Group Managing Director
-</p>
+<p style="color:#ccc;margin-top:15px;">
 
-<h3 style="color:gold; font-size:32px; margin-bottom:10px;">
-Mr. Smart Oboson
-</h3>
-
-<p style="color:#ccc; font-size:18px; margin-bottom:25px;">
-Executive Chairman / Group Managing Director, Prinsora Group
-</p>
-
-<p style="color:#ccc; line-height:1.9; font-size:16px;">
-
-Mr. Smart Oboson is a visionary executive, accomplished administrator,
-and result-driven Human Resources professional with over a decade of
-progressive experience spanning Human Resources Management, Office Administration,
-Financial Analysis, Executive Support, Procurement, and Organizational Development.
-
-He holds a Bachelor of Science (B.Sc.) degree in Public Administration
-from the University of Calabar and has consistently demonstrated excellence
-in corporate leadership, strategic planning, and operational management
-across diverse business environments.
-
-Throughout his professional journey, Mr. Oboson has built a reputation
-for driving organizational efficiency, strengthening workforce performance,
-and implementing sustainable business strategies that foster long-term growth
-and corporate excellence.
-
-His expertise covers recruitment and talent acquisition, employee relations,
-performance management, policy implementation, procurement and logistics,
-financial analysis, risk management, and executive administration.
-He is highly regarded for his ability to optimize operational processes,
-ensure regulatory compliance, and lead high-performing teams with integrity,
-innovation, and professionalism.
-
-Mr. Oboson previously served as the Human Resources and Administrative Officer
-at Abuja Leasing Company, where he successfully coordinated HR operations,
-managed administrative systems, supervised employee engagement initiatives,
-implemented workplace policies, and provided executive-level administrative support
-that enhanced organizational productivity and operational structure.
-
-He also served as Financial Analyst at Abuja Leasing Company,
-where he was responsible for financial reporting, budget analysis,
-cost evaluation, financial planning support, and providing strategic insights
-that contributed to sound financial decision-making and improved business performance.
-
-As Executive Chairman and Group Managing Director of Prinsora Group,
-Mr. Oboson provides strategic leadership and corporate direction for the organization,
-driving innovation, operational excellence, business expansion,
-and sustainable enterprise development across the Group’s various interests.
-
-Under his leadership, Prinsora Group continues to strengthen its corporate presence
-through strategic partnerships, improved operational systems,
-customer-focused solutions, and a commitment to excellence in service delivery.
+To become a respected multi-service company recognized for operational excellence, innovation, and trusted customer relationships.
 
 </p>
-
-<h4 style="color:gold; margin-top:35px;">
-Professional Certifications
-</h4>
-
-<ul style="color:#ccc; line-height:1.9; padding-left:20px;">
-
-<li>Introduction to Human Resources Management — Cornerstone OnDemand Foundation</li>
-
-<li>Security Risk Management Essentials — Cornerstone OnDemand Foundation</li>
-
-<li>MEAL Essentials Certificate — Cornerstone OnDemand Foundation</li>
-
-<li>Procurement and Logistics Certificate — Cornerstone OnDemand Foundation</li>
-
-<li>Product Development Module — Bailey Anne</li>
-
-<li>Comprehensive Customer Service Course — Eva Wright</li>
-
-</ul>
-
-<h4 style="color:gold; margin-top:35px;">
-Core Leadership Strengths
-</h4>
-
-<ul style="color:#ccc; line-height:1.9; padding-left:20px;">
-
-<li>Strategic Leadership & Corporate Governance</li>
-
-<li>Human Resources & Talent Management</li>
-
-<li>Business Development & Organizational Growth</li>
-
-<li>Financial Analysis & Operational Planning</li>
-
-<li>Executive Administration & Policy Implementation</li>
-
-<li>Procurement, Logistics & Risk Management</li>
-
-<li>Team Leadership & Performance Optimization</li>
-
-<li>Customer Relations & Service Excellence</li>
-
-</ul>
-
-<h4 style="color:gold; margin-top:35px;">
-Major Achievements
-</h4>
-
-<ul style="color:#ccc; line-height:1.9; padding-left:20px;">
-
-<li>Successfully led organizational restructuring and administrative process improvements that enhanced operational efficiency.</li>
-
-<li>Implemented strategic HR systems that improved workforce productivity and employee engagement.</li>
-
-<li>Contributed to financial planning and operational analysis that supported sustainable business growth.</li>
-
-<li>Built and managed high-performing teams focused on excellence, accountability, and innovation.</li>
-
-<li>Strengthened corporate operations through strategic leadership and business development initiatives.</li>
-
-</ul>
 
 </div>
 
 </div>
 
 </section>
-  <div class="about-box">
-    <h3 style="color: gold; margin-bottom: 15px;">Our Vision</h3>
 
-    <p style="color: #cccccc;">
-      To become a respected multi-service company recognized for operational excellence, innovation, and trusted customer relationships.
-    </p>
-  </div>
+<section id="executive" style="background:#080808;">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Executive Chairman / Group Managing Director
+
+</h2>
+
+<div class="contact-box">
+
+<img src="chairman.jpg"
+alt="Executive Chairman"
+class="executive-image">
+
+<h3 style="color:gold;">
+Smart Oboson
+</h3>
+
+<p style="color:#ccc;margin-bottom:25px;">
+
+Executive Chairman / Group Managing Director
+
+</p>
+
+<h3 style="color:gold;">
+Qualifications
+</h3>
+
+<p style="color:#ccc;">
+
+• Bachelor of Science (B.Sc.) — Insert Degree<br>
+• Professional Certifications — Insert Certifications<br>
+• Leadership Training — Insert Training<br>
+• Industry Experience — Insert Experience
+
+</p>
+
+<h3 style="color:gold;margin-top:25px;">
+Profile
+</h3>
+
+<p style="color:#ccc;margin-top:15px;">
+
+Smart Oboson leads Prinsora Group with a vision centered on operational excellence, innovation, sustainable growth, and customer-centered service delivery.
+
+</p>
+
 </div>
 
-  </section>  <section id="why" style="background:#080808;">
-    <div class="container">
-      <h2 class="section-title">Why Choose Prinsora Group</h2><div class="service-grid">
-    <div class="service-card">
-      <h3>Prinsora Facilities</h3>
-      <p>
-        Integrated facility management and technical operational support for residential, hospitality, commercial, institutional, and industrial properties.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Prinsora Cleaning</h3>
-      <p>
-        Professional environmental hygiene, sanitation, commercial cleaning, post-construction cleaning, and fumigation solutions.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Prinsora Fabric Care</h3>
-      <p>
-        Premium garment, textile, and hospitality linen management services for corporate organizations, executives, hotels, and residential clients.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Prinsora Support Services</h3>
-      <p>
-        Workforce outsourcing, HR consulting, staffing support, payroll coordination, and administrative operational support.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Prinsora Property Care</h3>
-      <p>
-        Environmental maintenance, landscaping, estate upkeep, and property preservation services designed to maintain aesthetics and long-term property value.
-      </p>
-    </div>
-    <div class="service-card">
-      <h3>Professionalism</h3>
-      <p>
-        We are committed to delivering structured and reliable services with high professional standards.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Innovation</h3>
-      <p>
-        We continuously explore better ways to provide solutions and improve customer experiences.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Customer Satisfaction</h3>
-      <p>
-        Building trusted relationships and long-term value for our clients remains our priority.
-      </p>
-    </div>
-  </div>
 </div>
 
-  </section>  <section class="services" id="services">
-    <div class="container">
-      <h2 class="section-title">Our Service Divisions</h2><p class="section-text">
-    We are expanding across multiple service areas designed to meet modern business and customer needs.
-  </p>
+</section>
 
-  <div class="service-grid">
-    <div class="service-card">
-      <h3>Business Support</h3>
-      <p>
-        Professional support solutions for businesses, startups, and organizations.
-      </p>
-    </div>
+<section id="why">
 
-    <div class="service-card">
-      <h3>Operations & Logistics</h3>
-      <p>
-        Efficient operational coordination and structured service management.
-      </p>
-    </div>
+<div class="container">
 
-    <div class="service-card">
-      <h3>Fabric Care & Lifestyle</h3>
-      <p>
-        Modern customer-focused fabric care and lifestyle convenience services.
-      </p>
-    </div>
-  </div>
+<h2 class="section-title">
+
+Why Choose Prinsora Group
+
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Professionalism</h3>
+<p>Reliable and structured service delivery.</p>
 </div>
 
-  </section>  <section style="background:#050505;">
-    <div class="container">
-      <h2 class="section-title">Operational Excellence</h2><div class="service-grid">
-    <div class="service-card">
-      <h3>Quality Assurance</h3>
-      <p>
-        Structured supervision systems, operational audits, safety compliance monitoring, and performance reporting ensure consistent service delivery.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Preventive Operations</h3>
-      <p>
-        We emphasize preventive maintenance and proactive operational management to reduce disruptions, safety risks, and long-term costs.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Client-Centered Service</h3>
-      <p>
-        Every service is executed through customized operational planning, workforce coordination, reporting systems, and continuous improvement strategies.
-      </p>
-    </div>
-  </div>
+<div class="service-card">
+<h3>Innovation</h3>
+<p>Continuous improvement and modern solutions.</p>
 </div>
 
-  </section>  <section style="background:#050505;">
-    <div class="container">
-      <h2 class="section-title">Our Mission</h2><p class="section-text">
-    Our mission is to build a trusted and diversified business structure capable of providing sustainable solutions, operational excellence, and customer-centered services across multiple industries.
-  </p>
+<div class="service-card">
+<h3>Customer Satisfaction</h3>
+<p>Building trusted relationships and long-term value.</p>
 </div>
 
-  </section>  <section style="background:#0a0a0a;">
-    <div class="container">
-      <h2 class="section-title">Our Service Workflow</h2><div class="service-grid">
-    <div class="service-card"><h3>1. Client Engagement</h3><p>Initial consultation and service inquiry.</p></div>
-    <div class="service-card"><h3>2. Needs Assessment</h3><p>Site inspection and operational requirement analysis.</p></div>
-    <div class="service-card"><h3>3. Proposal Development</h3><p>Customized quotation and operational planning.</p></div>
-    <div class="service-card"><h3>4. Workforce Deployment</h3><p>Assignment of trained personnel and supervisors.</p></div>
-    <div class="service-card"><h3>5. Service Execution</h3><p>Operations executed using structured SOP systems.</p></div>
-    <div class="service-card"><h3>6. Quality Monitoring</h3><p>Continuous supervision, reporting, and improvement.</p></div>
-  </div>
 </div>
 
-  </section>  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact Prinsora Group</h2><p class="section-text">
-    We are open to partnerships, collaborations, and business inquiries.
-  </p>
-
-  <div class="contact-box">
-    <h3 style="color:gold;margin-bottom:20px;">Get In Touch</h3>
-    <p>Email: <a href="mailto:prinsoragroup@gmail.com">prinsoragroup@gmail.com</a></p>
-    <body>
-
-  <!-- PASTE YOUR BUTTON CODE HERE -->
-  <button onclick="toggleAddress()" id="addressBtn">
-    Show Address
-  </button>
-
-  <p id="address" style="display:none; margin-top:10px;">
-    12 Grace Pavilion St, Phase 2, Jikwoyi, FCT, Abuja, Nigeria
-  </p>
-
-  <button onclick="togglePhone()" id="phoneBtn" style="margin-top:10px;">
-    Show Phone Number
-  </button>
-
-  <p id="phone" style="display:none; margin-top:10px;">
-    +2347036937363
-  </p>
-
-  <script>
-    function toggleAddress() {
-      const addr = document.getElementById("address");
-      const btn = document.getElementById("addressBtn");
-
-      if (addr.style.display === "none") {
-        addr.style.display = "block";
-        btn.textContent = "Hide Address";
-      } else {
-        addr.style.display = "none";
-        btn.textContent = "Show Address";
-      }
-    }
-
-    function togglePhone() {
-      const phone = document.getElementById("phone");
-      const btn = document.getElementById("phoneBtn");
-
-      if (phone.style.display === "none") {
-        phone.style.display = "block";
-        btn.textContent = "Hide Phone Number";
-      } else {
-        phone.style.display = "none";
-        btn.textContent = "Show Phone Number";
-      }
-    }
-  </script>
-
-</body>v>
-    <a href="mailto:prinsoragroup@gmail.com" class="btn btn-primary">
-      Send Message
-    </a>
-  </div>
 </div>
-  </section>  <footer>
-    © 2026 Prinsora Group. All rights reserved.
-  </footer></body>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Service Divisions
+
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Prinsora Facilities</h3>
+<p>Integrated facility management services.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Cleaning</h3>
+<p>Professional sanitation and environmental services.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Fabric Care</h3>
+<p>Premium garment and textile care solutions.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Support Services</h3>
+<p>Workforce outsourcing and administrative support.</p>
+</div>
+
+<div class="service-card">
+<h3>Prinsora Property Care</h3>
+<p>Property maintenance and environmental care services.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Contact Prinsora Group
+
+</h2>
+
+<div class="contact-box">
+
+<p>Email: info@prinsoragroup.com</p>
+
+<p>Lagos, Nigeria</p>
+
+<a href="mailto:info@prinsoragroup.com" class="btn btn-primary">
+
+Send Message
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Prinsora Group. All rights reserved.
+
+</footer>
+
+</body>
 </html>
